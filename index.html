@@ -1,45 +1,3 @@
-<!-- <!DOCTYPE html>
-<html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <meta charset="UTF-8">
-  <link type="text/css" rel="stylesheet" href="./css/styles.css" >
-  <script src="./js/jquery-3.6.3.min.js"></script>
-  <script type="text/javascript" src="./js/jquery.dataTables.min.js"></script>
-  <script src="./js/highcharts.min.js"></script>
-  <script src="https://code.highcharts.com/modules/accessibility.js"></script>
-</head>
-<body>
-  
-  <h2 id="variableName">Temperatura</h2>
-  <h1 id="variableValue">28.5</h1>
-
-  <div id="titleSesion">  
-    <h3>Grafica</h3>
-    <span> / Temperatura</span>
-  </div>
-  <div id="box">
-    <div id="chart"></div>
-    <div id="footerContainer">
-      <div>
-        <p id="txtMin">MIN</p>
-        <p id="min">0.0</p>
-      </div>
-      <div>
-        <p id="txtMax">MAX</p>
-        <p id="max">80</p>
-      </div>
-  </div>
-  </div>
- 
-  <h3>Historico</h3>
-  <div style="margin-top: 10px;">
-    <div id="gvHistory"></div>
-  </div>
-</body>
-<script src="./js/appPrueba.js"></script>
-</html> -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,65 +5,60 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link type="text/css" rel="stylesheet" href="./css/stylesN.css" >
+  
+  <script src="./js/jquery-3.6.3.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.dataTables.min.js"></script>
+  <script src="./js/highcharts.min.js"></script>
+  <script src="https://code.highcharts.com/modules/accessibility.js"></script>
 </head>
 <body>
 
-  <header>
-    <h1>temperatura</h1>
-    <h1>28°C</h1>
-  </header>
+  <div class="wrap">
+    <header>
+      <h1 id="variableName">Temperatura</h1>
+      <h1>28°C</h1>
+    </header>
 
-  <div id="contenedorGrafica">
-    <div id="grafica"></div>
-    <div>
-      <div>
-        <p>Min</p>
-        <p>10°C</p>
-      </div>
-      <div>
-        <p>Max</p>
-        <p>50°C</p>
+    <div id="box">
+      <div id="chart"></div>
+      <div id="footerContainer">
+        <div id="chart-min">
+          <p id="txtMin">MIN</p>
+          <p id="min">0.0°C</p>
+        </div>
+        <div id="chart-max">
+          <p id="txtMax">MAX</p>
+          <p id="max">80°C</p>
+        </div>
       </div>
     </div>
+
+    <footer class="footer">
+      <h1 class="footer-title">Historico</h1>
+
+      <div id="footer-tarjetas-vistaPrincipal">
+
+        <article class="footer-tarjeta">
+          <p class="footer-tarjeta-fecha">20-04-2023 | 16:52:11</p>
+          <h1 class="footer-tarjeta-temp">24°C</h1>
+        </article>
+
+        <article class="footer-tarjeta">
+          <p class="footer-tarjeta-fecha">20-04-2023 | 16:52:11</p>
+          <h1 class="footer-tarjeta-temp">24°C</h1>
+        </article>
+
+        <article class="footer-tarjeta">
+          <p class="footer-tarjeta-fecha">20-04-2023 | 16:52:11</p>
+          <h1 class="footer-tarjeta-temp">24°C</h1>
+        </article>
+
+      </div>
+    </footer>
   </div>
 
-  <footer>
-    <h1>Historico</h1>
-
-    <div id="footer-tarjetas-vistaPrincipal">
-
-      <article class="tarjeta">
-        <p>Temperatura</p>
-        <p>20-04-2023 | 16:52:11</p>
-        <h1>24°C</h1>
-      </article>
-
-      <article class="tarjeta">
-        <p>Temperatura</p>
-        <p>20-04-2023 | 16:52:11</p>
-        <h1>24°C</h1>
-      </article>
-
-      <p>Mas</p>
-      <span>Icono</span>
-
-      <article class="tarjeta">
-        <p>Temperatura</p>
-        <p>20-04-2023 | 16:52:11</p>
-        <h1>24°C</h1>
-      </article>
-
-
-    </div>
-
-  </footer>
-
-
-
-
-
-
-
+  <script src="./js/appPrueba.js"></script>
   
 </body>
 </html>
