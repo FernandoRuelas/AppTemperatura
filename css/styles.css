@@ -1,0 +1,140 @@
+body {
+  background-color: #dddddd;
+  padding: 15px 15px 15px 15px;
+}
+
+/*Global*/
+h3 {
+  color: #001e50;
+  font-size: 19px;
+  margin: 0px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/*Title*/
+#variableName {
+  font-size: 40px;
+  text-align: center;
+  color: #5f6f7e;
+  margin-top: 0;
+}
+
+#variableValue {
+  font-size: 60px;
+  text-align: center;
+  color: #17a0a3;
+  margin-top: 0;
+}
+
+/*Chart*/
+#titleSesion {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+span {
+  color: #92a9ce;
+  font-size: 17px;
+  margin-left: 5px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+#box {
+  flex: 1;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 24px rgba(141, 139, 139, 0.2);
+  border-radius: 10px;
+  padding: 18px 25px;
+  margin-bottom: 15px;
+}
+
+#chart {
+  height: 300px;
+  margin-top: 0;
+}
+
+#footerContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#footerContainer > div {
+  width: 50%;
+}
+
+#txtMin {
+  font-size: 19px;
+  font-weight: bold;
+  color: #17a0a3;
+}
+
+#txtMax {
+  font-size: 19px;
+  font-weight: bold;
+  color: #17a0a3;
+  text-align: right;
+}
+
+#min {
+  font-size: 16px;
+  color: #5f6f7e;
+}
+
+#max {
+  font-size: 16px;
+  color: #5f6f7e;
+  text-align: right;
+}
+
+/*History*/
+#card {
+  flex: 1;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 24px rgba(141, 139, 139, 0.2);
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;
+  margin-bottom: 15px;
+}
+#txtDate {
+  font-size: 16px;
+  font-weight: bold;
+  color: #001e50;
+}
+#btnMoreInfo {
+  width: 180px;
+  height: 50px;
+  background-color: #001e50;
+  border-radius: 10px;
+  color: #ffffff;
+  margin-bottom: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+/*styles table*/
+table {
+  border-collapse: collapse;
+}
+
+th,
+tr,
+td {
+  border: 1px solid #000;
+  width: 150px;
+  height: 45px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+th {
+  color: #fff;
+  background-color: #252525;
+}
+
+tr:nth-child(odd) td {
+  background-color: #eee;
+}
