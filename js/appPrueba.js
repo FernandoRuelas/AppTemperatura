@@ -11,13 +11,32 @@ $(document).ready(function(){
       
       $('footer').removeClass('footer');
       $('footer').addClass('footerSpan');
-      $('.footer-tarjeta').css('display','flex')
+        //mostrar tarjetas
+        let tarjetas=''
+        dataSensor.map((tarjeta)=>{
+      
+          tarjetas+=`
+         
+          <article class="footer-tarjeta">
+
+          <div class="footer-tarjeta-fecha-hora">
+            <p class="footer-tarjeta-fecha-text">Fecha y hora</p>
+            <p class="footer-tarjeta-fecha">20-04-2023 | 16:52:11</p>
+          </div>
+
+          <h1 class="footer-tarjeta-temp">${tarjeta}</h1>
+
+        </article>
+
+          `
+        })
+        $('.footer-tarjetas-wrap').html(tarjetas)
 
     }
     else{
       $('footer').removeClass('footerSpan');
       $('footer').addClass('footer');
-      $('.footer-tarjeta').css('display','none')
+     
     }
 
   })
